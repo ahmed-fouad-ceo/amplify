@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://runtime.lex.us-east-1.amazonaws.com/package/1.0/lex-web-ui.js"></script>
+</head>
+<body>
+    <div id="lex-web-ui"></div>
+    <script>
+        var chatbotUi = new ChatBotUi({
+            botName: 'HelpDeskBot', // Replace with your bot's name
+            placeholder: 'Ask me anything',
+            toolbarTitle: 'HelpDesk Chatbot'
+        });
+        chatbotUi.init();
+    </script>
+</body>
+</html>
