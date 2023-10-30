@@ -2,21 +2,24 @@
 <html>
 <head>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-
     <script src="https://runtime.lex.us-east-1.amazonaws.com/package/1.0/lex-web-ui.js"></script>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1044.0.min.js"></script>
 </head>
 <body>
     <div id="lex-web-ui"></div>
-    
     <script>
-        var chatbotUi = new ChatBotUi({
-            botName: 'HelpDeskBot',
-            botAlias: 'TestBotAlias',
-            placeholder: 'Ask me anything',
-            toolbarTitle: 'HelpDesk Chatbot',
+        AWS.config.update({
+            accessKeyId: 'AKIAYE722R27RQHBR2ND',
+            secretAccessKey: '546lSs9VSflPADkhaxnl9jnjEfb5/KIHMrgl/n8V',
+            region: 'us-east-1'
         });
 
-        // Initialize the chatbot
+        var chatbotUi = new ChatBotUi({
+            botName: 'HelpDeskBot',
+            placeholder: 'Ask me anything',
+            toolbarTitle: 'HelpDesk Chatbot'
+        });
+
         chatbotUi.init();
     </script>
 </body>
