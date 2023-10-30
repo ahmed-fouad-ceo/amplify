@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- Include jQuery -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
-    <!-- Include the Amazon Lex Web SDK -->
     <script src="https://runtime.lex.us-east-1.amazonaws.com/package/1.0/lex-web-ui.js"></script>
 </head>
 <body>
     <div id="lex-web-ui"></div>
     
     <script>
-        // Initialize the Amazon Lex chatbot
         var chatbotUi = new ChatBotUi({
-            botName: 'HelpDeskBot', // Replace with your bot's name
-            botAlias: 'TestBotAlias', // Replace with your alias name
+            botName: 'HelpDeskBot',
+            botAlias: 'TestBotAlias',
             placeholder: 'Ask me anything',
             toolbarTitle: 'HelpDesk Chatbot',
         });
